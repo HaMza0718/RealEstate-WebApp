@@ -16,10 +16,12 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 .paddings {
   padding: 1.5rem;
 }
@@ -35,6 +37,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .flexStart {
   display: flex;
   justify-content: flex-start;
@@ -53,12 +56,14 @@ a {
   align-items: center;
   flex-direction: column;
 }
+
 .flexColStart {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+
 .flexColEnd {
   display: flex;
   flex-direction: column;
@@ -76,10 +81,58 @@ a {
   color: rgb(140 139 139);
   font-size: 0.9rem;
 }
+
 .orangeText {
   color: orange;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.button {
+  width: 8em;
+  position: relative;
+  height: 3em;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: var(--black);
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: var(--black);
+  transition: 0.5s;
+}
+
+.button:hover::before,
+button:hover::after {
+  transform: scale(0)
+}
+
+.button:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
 }
 
 /* media queries */
@@ -96,7 +149,8 @@ a {
   }
 }
 
-@media (min-width: 1280px), (min-width: 768px) {
+@media (min-width: 1280px),
+(min-width: 768px) {
   .paddings {
     padding: 2rem;
   }
@@ -106,6 +160,7 @@ a {
   .primaryText {
     font-size: 1.5rem;
   }
+
   .orangeText {
     font-size: 1.2rem;
   }
