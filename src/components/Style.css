@@ -1,18 +1,111 @@
-.h-wrapper{
-    background: var(--black);
-    color: #fff;
+/*---------- HEADER -------------*/
+.logo-head{
+    font-weight: 600;
 }
-.h-container{
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: var(--secondary);
+.h-wrapper {
+  color: #fff;
 }
-.h-menu{
-    gap: 2rem;
-    transition: all 300ms ease-in;
+.h-container {
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--secondary);
 }
-.h-menu a:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+.h-menu {
+  gap: 2rem;
+  transition: all 300ms ease-in;
+}
+.h-menu a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/*---------- HERO -------------*/
+.hero-wrapper {
+  color: white;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.hero-container {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.image-container {
+  width: 28rem;
+  height: 30.2rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  border: 8px solid rgba(255, 255, 255, 0.12);
+}
+.image-container > img {
+  width: 100%;
+  height: 100%;
+}
+.hero-title {
+  position: relative;
+  z-index: 1;
+}
+.hero-title > h1 {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 4rem;
+}
+.circle {
+  height: 4rem;
+  width: 4rem;
+  background: var(--blue-gradient);
+  position: absolute;
+  border-radius: 999px;
+  left: 32%;
+  bottom: 63%;
+  z-index: 1;
+}
+.search-bar{
+    padding: 1.5rem 2rem;
+}
+.search {
+  display: inline-block;
+  position: relative;
+}
+
+.search input[type="text"] {
+  width: 290px;
+  height: 45px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+.search button[type="submit"] {
+  height: 45px;
+  background: var(--blue-gradient);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.9s ease;
+}
+
+.search button[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: blue;
+}
+.hero-description{
+    margin-left: 2rem;
+}
+.stats{
+    width: 60%;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+}
+.stat>:nth-child(1){
+    font-size: 2rem;
+}
+.stat>:nth-child(1)>:last-child{
+    color: var(--blue);
 }

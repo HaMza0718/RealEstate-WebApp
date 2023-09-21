@@ -1,19 +1,20 @@
 import React from "react";
-import './Style.css';
+import "./Style.css";
 const Header = () => {
   return (
     <div>
       <section className="h-wrapper">
         <div className="flexCenter paddings innerWidth h-container">
-          <img src="./pngegg.png" alt="logo" width={100}/>
+          <div className="flexCenter">
+            <a className="logo-head">Next Home</a>
+            <img src="./pngegg.png" alt="logo" width={100} />
+          </div>
           <div className="flexCenter h-menu">
             <a href="">Residence</a>
             <a href="">Our Value</a>
             <a href="">About</a>
             <a href="">Contact</a>
-            <button className="button">
-            Get Started
-            </button>
+            <button className="button">Get Started</button>
           </div>
         </div>
       </section>
