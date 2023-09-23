@@ -128,22 +128,25 @@
 }
 
 /*---------- SLIDER -------------*/
-.s-container{
+.s-container {
   overflow: hidden;
   position: relative;
 }
+
 .s-card {
   gap: 0.6rem;
   padding: 1rem;
   border-radius: 10px;
   max-width: max-content;
   margin: auto;
+  margin-bottom: 1rem;
   transition: all 300ms ease-in;
 }
 
 .s-card>img {
   width: 100%;
   max-width: 15rem;
+  border-radius: 14px;
 }
 
 .s-card>:nth-child(2) {
@@ -167,8 +170,20 @@
       rgba(136, 160, 255, 0.46)217.91%);
   box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
 }
-.s-button{
-  /* position: absolute; */
-  gap: 1rem;
-  top: 4rem;
+
+.s-button {
+  gap: 0.7rem;
 }
+
+.s-button button {
+  margin-bottom: 2px;
+  font-size: 1.1rem;
+  padding: 0.2rem 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background: #EEEEFF;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* --------------VALUE ------------------*/

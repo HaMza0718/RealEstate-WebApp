@@ -40,9 +40,9 @@ export default Slider;
 const SliderButton = () => {
   const swiper = useSwiper();
   return (
-    <div className="flexCenter s-button">
-      <button onClick={()=>swiper.slidePrev()}>&lt;</button>
-      <button onClick={()=>swiper.slideNext()}>&gt;</button>
+    <div className="flexCenter secondaryText s-button">
+      <button onClick={() => swiper.slidePrev()}>&lt;</button>
+      <button onClick={() => swiper.slideNext()}>&gt;</button>
     </div>
   );
 };
