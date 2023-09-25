@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Slider from "./components/Slider";
 import "./index.css";
 import Value from "./components/Value";
+import Logo from "./components/Logo";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Hero />
       </div>
     </div>
+    <Logo/>
     <Slider/>
     <Value/>
     </>
