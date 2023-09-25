@@ -25,6 +25,7 @@
 }
 /*---------- LOGOS -------------*/
 .logo-container{
+  margin-top: 1rem;
   justify-content: space-around;
   gap: 1rem;
 }
@@ -251,3 +252,48 @@
   fill: var(--blue);
 
 }
+/*---------- CONTACT -------------*/
+.con-container{
+  justify-content: space-between;
+}
+.con-container>div{
+  flex: 1;
+}
+.con-right{
+  width: 100%;
+}
+.con-left{
+  gap: 0.5rem;
+}
+.con-button {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: var(--blue);
+  color: white;
+  border-radius: 5px 18px;
+  cursor: pointer;
+ }
+ 
+ .con-button:hover {
+  background: var(--blue-gradient);
+ }
+ 
+ .con-button:active {
+  transform: translate(0em, 0.2em);
+ }
+ .contact-modes{
+  margin-top: 2rem;
+  gap: 1rem;
+ }
+ .contact-modes .row{
+  gap: 1.5rem;
+ }
+ .mode{
+  width: 16rem;
+  padding: 1rem;
+  border: 0.8 solid rgba(128, 128, 128, 0.143);
+  border-radius: 5px;
+  gap: 1rem;
+ }
