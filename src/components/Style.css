@@ -187,3 +187,35 @@
 }
 
 /* --------------VALUE ------------------*/
+.value-container .image-container{
+  border: 8px solid rgba(232 232 232 /93%);
+}
+.value-container>div{
+  flex: 1;
+}
+.v-right{
+  gap: 0.4rem;
+}
+.accordion{
+  border: none;
+  margin-top: 1rem;
+}
+.accordianItem{
+  background: white;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.accordionItemButton{
+  background: white;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.icon{
+  padding: 10px;
+  background: #eeeeff;
+  border-radius: 5px;
+}
