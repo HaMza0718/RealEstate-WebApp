@@ -176,7 +176,7 @@
 }
 
 .s-button button {
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   font-size: 1.1rem;
   padding: 0.2rem 0.7rem;
   border: none;
@@ -184,6 +184,10 @@
   background: #EEEEFF;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.s-button button:hover{
+  transform: scale(1.1);
 }
 
 /* --------------VALUE ------------------*/
@@ -196,9 +200,12 @@
 .v-right{
   gap: 0.4rem;
 }
+.itemHead{
+  font-size: 24px;
+}
 .accordion{
-  border: none;
   margin-top: 1rem;
+  box-shadow: var(--shadow)
 }
 .accordianItem{
   background: white;
@@ -218,4 +225,12 @@
   padding: 10px;
   background: #eeeeff;
   border-radius: 5px;
+  transition: all 200ms ease-in;
+}
+.icon:hover{
+  transform: scale(1.2);
+}
+.icon svg{
+  fill: var(--blue);
+  
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Style.css";
 import {
   Accordion,
@@ -6,7 +6,6 @@ import {
   AccordionItemHeading,
   AccordionItemButton,
   AccordionItemPanel,
-  AccordionItemState,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
 import { MdOutlineArrowDropDown } from "react-icons/md";
@@ -22,8 +21,8 @@ const Value = () => {
           </div>
         </div>
         <div className="flexColStart v-right">
-          <span className="blueText">Our Value</span>
-          <span className="primaryText">Value we give to you</span>
+          <span className="primaryText">Our Value</span>
+          <span className="blueText">Value we give to you</span>
           <span>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
             a quam quia saepe, <br /> neque fuga unde distinctio beatae quasi
@@ -36,17 +35,23 @@ const Value = () => {
           >
             {data.map((item, i) => {
               return (
-                <AccordionItem className="accordianItem" key={i} uuid={i}>
+                <AccordionItem
+                  className='accordionItem'
+                  key={i}
+                  uuid={i}
+                >
                   <AccordionItemHeading>
                     <AccordionItemButton className="flexCenter accordionItemButton">
                       <div className="flexCenter icon">{item.icon}</div>
-                      <span className="primaryText">{item.heading}</span>
+                      <span className="primaryText itemHead">
+                        {item.heading}
+                      </span>
                       <div className="flexCenter icon">
                         <MdOutlineArrowDropDown size={20} />
                       </div>
                     </AccordionItemButton>
                   </AccordionItemHeading>
-                  <AccordionItemPanel className="secondaryText">
+                  <AccordionItemPanel className="paddings secondaryText">
                     {item.detail}
                   </AccordionItemPanel>
                 </AccordionItem>

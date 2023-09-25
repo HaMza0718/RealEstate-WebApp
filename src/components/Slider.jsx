@@ -10,8 +10,8 @@ const Slider = () => {
     <section className="s-wrapper">
       <div className="paddings innerWidth s-container">
         <div className="s-head paddings flexColStart">
-          <span className="blueText">Best Choices</span>
-          <span className="primaryText">Popular Residencies</span>
+          <span className="primaryText">Best Choices</span>
+          <span className="blueText">Popular Residencies</span>
         </div>
 
         <Swiper {...sliderSettings}>
