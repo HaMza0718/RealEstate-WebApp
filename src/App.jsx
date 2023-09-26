@@ -6,7 +6,8 @@ import "./index.css";
 import Value from "./components/Value";
 import Logo from "./components/Logo";
 import Contact from "./components/Contact";
-import GetStarted from "./components/GetStarted";
+import GetStarted from "./components/GetStarted"
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <Value />
       <Contact />
       <GetStarted />
+      <Footer />
     </>
   );
 };
