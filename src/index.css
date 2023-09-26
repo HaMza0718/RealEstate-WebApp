@@ -136,15 +136,17 @@ button:hover::after {
   cursor: pointer;
 }
 
-.App{
+.App {
   position: relative;
   overflow-x: clip;
 }
-.App:nth-child(1){
+
+.App:nth-child(1) {
   background: var(--black);
   position: relative;
 }
-.white-gradient{
+
+.white-gradient {
   position: absolute;
   width: 18rem;
   height: 18rem;
@@ -179,7 +181,7 @@ button:hover::after {
     font-size: 1.5rem;
   }
 
-  .orangeText {
+  .blueText {
     font-size: 1.2rem;
   }
 }

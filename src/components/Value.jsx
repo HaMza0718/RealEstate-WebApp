@@ -23,7 +23,7 @@ const Value = () => {
         <div className="flexColStart v-right">
           <span className="primaryText">Our Value</span>
           <span className="blueText">Value we give to you</span>
-          <span>
+          <span className="secondaryText">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
             a quam quia saepe, <br /> neque fuga unde distinctio beatae quasi
             libero quidem nesciunt ullam laudantium!
