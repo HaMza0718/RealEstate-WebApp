@@ -17,18 +17,58 @@ const Contact = () => {
             quibusdam earum veniam?
           </span>
           <div className="flexColStart contact-modes">
-            <div className="flexColStart row">
+            <div className="flexStart row">
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
                     <MdCall size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span>Call</span>
-                    <span>0900 123 456</span>
+                    <span className="primaryText">Call</span>
+                    <span className="secondaryText">0900 123 456</span>
                   </div>
                 </div>
                 <button className="flexCenter con-button">Call Now</button>
+              </div>
+              <div className="flexColCenter mode">
+                <div className="flexStart">
+                  <div className="flexCenter icon">
+                    <HiChatBubbleBottomCenter size={25} />
+                  </div>
+                  <div className="flexColStart detail">
+                    <span className="primaryText">Chat</span>
+                    <span className="secondaryText">0900 123 456</span>
+                  </div>
+                </div>
+                <button className="flexCenter con-button">Chat Now</button>
+              </div>
+            </div>
+            <div className="flexStart row">
+              <div className="flexColCenter mode">
+                <div className="flexStart">
+                  <div className="flexCenter icon">
+                    <BsFillCameraVideoOffFill size={25} />
+                  </div>
+                  <div className="flexColStart detail">
+                    <span className="primaryText">Video Call</span>
+                    <span className="secondaryText">0900 123 456</span>
+                  </div>
+                </div>
+                <button className="flexCenter con-button">
+                  Video Call Now
+                </button>
+              </div>
+              <div className="flexColCenter mode">
+                <div className="flexStart">
+                  <div className="flexCenter icon">
+                    <BsFillChatDotsFill size={25} />
+                  </div>
+                  <div className="flexColStart detail">
+                    <span className="primaryText">Email</span>
+                    <span className="secondaryText">abc@email.com</span>
+                  </div>
+                </div>
+                <button className="flexCenter con-button">Email Now</button>
               </div>
             </div>
           </div>

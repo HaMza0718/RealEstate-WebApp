@@ -23,15 +23,18 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+
 /*---------- LOGOS -------------*/
-.logo-container{
+.logo-container {
   margin-top: 1rem;
   justify-content: space-around;
   gap: 1rem;
 }
-.logo-container>img{
+
+.logo-container>img {
   width: 9rem;
 }
+
 /*---------- HERO -------------*/
 .hero-wrapper {
   color: white;
@@ -179,6 +182,10 @@
   box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
 }
 
+.swiper-horizontal {
+  overflow: visible;
+}
+
 .s-button {
   gap: 0.7rem;
 }
@@ -252,48 +259,109 @@
   fill: var(--blue);
 
 }
+
 /*---------- CONTACT -------------*/
-.con-container{
+.con-container {
   justify-content: space-between;
 }
-.con-container>div{
+
+.con-container>div {
   flex: 1;
 }
-.con-right{
+
+.con-right {
   width: 100%;
 }
-.con-left{
+
+.con-right .image-container {
+  margin-left: 14.5rem;
+  border: 8px solid rgba(232 232 232 /93%);
+}
+
+.con-left {
   gap: 0.5rem;
 }
+
+.contact-modes {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.contact-modes .row {
+  gap: 1.5rem;
+}
+
+.mode {
+  width: 16rem;
+  padding: 1rem;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 5px;
+  gap: 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.mode>:nth-child(1) {
+  width: 90%;
+  gap: 1.6rem;
+}
+
+.mode .detail .primaryText {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.mode:hover {
+  scale: 1.1;
+  box-shadow: var(--shadow);
+}
+
 .con-button {
+  width: 90%;
   font-size: 17px;
+  font-weight: 600;
   padding: 0.5em 2em;
   border: transparent;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   background: var(--blue);
   color: white;
   border-radius: 5px 18px;
   cursor: pointer;
- }
- 
- .con-button:hover {
+}
+
+.con-button:hover {
   background: var(--blue-gradient);
- }
- 
- .con-button:active {
+}
+
+.con-button:active {
   transform: translate(0em, 0.2em);
- }
- .contact-modes{
-  margin-top: 2rem;
-  gap: 1rem;
- }
- .contact-modes .row{
+}
+/*---------- GETSTARTED -------------*/
+.inner-container{
   gap: 1.5rem;
- }
- .mode{
-  width: 16rem;
-  padding: 1rem;
-  border: 0.8 solid rgba(128, 128, 128, 0.143);
-  border-radius: 5px;
-  gap: 1rem;
- }
+  background: #4161df;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 6px solid #5d77d6;
+  text-align: center;
+}
+.inner-container .primaryText{
+  color: white;
+  font-weight: 600;
+}
+.inner-container .secondaryText{
+  color: rgba(255, 255, 255, 0.587);
+}
+.start-btn{
+  background: #4161df;
+  box-shadow: var(--shadow);
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 45px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 300ms ease-in;
+}
+.start-btn:hover{
+  scale: 1.1;
+}

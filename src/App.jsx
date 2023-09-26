@@ -6,6 +6,7 @@ import "./index.css";
 import Value from "./components/Value";
 import Logo from "./components/Logo";
 import Contact from "./components/Contact";
+import GetStarted from "./components/GetStarted";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Slider />
       <Value />
       <Contact />
+      <GetStarted />
     </>
   );
 };
