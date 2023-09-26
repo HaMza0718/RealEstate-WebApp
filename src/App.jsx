@@ -2,12 +2,12 @@ import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Slider from "./components/Slider";
-import "./index.css";
 import Value from "./components/Value";
 import Logo from "./components/Logo";
 import Contact from "./components/Contact";
 import GetStarted from "./components/GetStarted"
 import Footer from "./components/Footer";
+import "./index.css";
 
 const App = () => {
   return (
